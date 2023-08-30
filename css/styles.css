@@ -1,0 +1,34 @@
+:root {
+    --color: #FA6BEF;
+    --color1: #AD9C58;
+    --color2: #FADA60;
+    --color3: #1FAD9E;
+    --color4: #46FAE6;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+}
+
+header {
+    color: var(--color);
+    border-bottom: 1px solid #1FAD9E;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
