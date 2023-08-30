@@ -15,6 +15,10 @@
     border: none;
 }
 
+input {
+    all: unset;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -123,6 +127,7 @@ h1.ancors{
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .imgC {
@@ -131,6 +136,29 @@ h1.ancors{
     height: 30px;
     border-radius: 10px;
     box-shadow: 2px 2px white;
+}
+
+.form {
+    visibility: hidden;
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+    margin: 0px 100px;
+    height: 0px;
+}
+
+.boxText {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 3px;
+    
+}
+
+#imgC3:checked~.form {
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
+    transition: 0.5;
 }
 
 .projetos {
